@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/img_1"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/img_1"
+        android:src="@drawable/gambar2"
+        android:id="@+id/img_2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_2"
+        android:layout_below="@id/img_1"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:text="Caldera mobile"
+        android:textSize="32dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/txt_1"
+        />
+    
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/txt_1"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Manfaatkan kekuatan data real-time untuk membantu menyelesaikan tugasmu atau membuat keputusan dari ikhtisar"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:id="@+id/txt_2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_below="@id/txt_2"
+        android:width="250dp"
+        android:text="Masuk"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:id="@+id/btn_1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_1"
+        android:width="250dp"
+        android:text="Daftar"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:id="@+id/btn_2"
+        />
+
+</RelativeLayout>

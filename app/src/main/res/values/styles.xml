@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Ph_datalogger" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/purplePrimary</item>
+        <item name="colorSecondary">@color/graySecondary</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+</resources>

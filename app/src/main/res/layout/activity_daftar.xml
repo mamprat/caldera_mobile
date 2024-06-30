@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarActivity"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/d_img_1"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/d_ic_back_1"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_ic_back_1"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Daftar Akun"
+        android:textSize="32dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/d_text_1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/d_text_1"
+        android:text="Lakukan daftar akun untuk dapat hak akses"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/d_text_2"
+        />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/d_text_2"
+        android:padding="20dp"
+        android:id="@+id/ly_1"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Nama Karyawan"
+            android:background="@drawable/background_outline"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:id="@+id/d_txt_nama"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="NIK Karyawan"
+            android:background="@drawable/background_outline"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:id="@+id/d_txt_nik"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Area Karyawan"
+            android:background="@drawable/background_outline"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:id="@+id/d_txt_area"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Kata Sandi"
+            android:background="@drawable/background_outline"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:id="@+id/d_txt_sandi"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Ulangi Kata Sandi"
+            android:background="@drawable/background_outline"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:id="@+id/d_txt_ulang"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_1"
+        android:layout_marginTop="20dp"
+        android:width="250dp"
+        android:text="Daftar"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:id="@+id/d_btn_1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/d_btn_1"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ly_2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun ?"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/d_txt_sudah"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Masuk"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/purplePrimary"
+            android:id="@+id/d_txt_akun"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+

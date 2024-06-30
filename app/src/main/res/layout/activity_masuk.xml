@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasukActivity"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/m_img_1"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/m_ic_back_1"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/m_img_1"
+        android:src="@drawable/gambar2"
+        android:id="@+id/m_img_2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/m_img_2"
+        android:layout_below="@id/m_img_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Caldera mobile"
+        android:textSize="32dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        android:id="@+id/m_txt_1"
+        />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/m_txt_1"
+        android:padding="30dp"
+        android:id="@+id/m_ly_1"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="55dp"
+            android:hint="Masukan Nomor Karyawan"
+            android:background="@drawable/background_outline"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="16sp"
+            android:id="@+id/m_txt_nomor"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:hint="Masukan Kata Sandi"
+            android:background="@drawable/background_outline"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="16sp"
+            android:id="@+id/m_txt_sandi"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Belum punya akun ?"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/m_txt_sudah"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/purplePrimary"
+            android:id="@+id/m_txt_akun"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/m_ly_1"
+        android:width="250dp"
+        android:text="Masuk"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:id="@+id/m_btn_1"
+        />
+
+</RelativeLayout>

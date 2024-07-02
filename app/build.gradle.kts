@@ -47,4 +47,6 @@ dependencies {
 
     //CircleImageView
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+    //GridView
+    implementation ("androidx.cardview:cardview:1.0.0")
 }

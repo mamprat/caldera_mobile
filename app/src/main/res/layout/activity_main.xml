@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_below="@id/txt_1"
-        android:padding="10dp"
+        android:padding="0dp"
         android:layout_centerHorizontal="true"
         android:text="Manfaatkan kekuatan data real-time untuk membantu menyelesaikan tugasmu atau membuat keputusan dari ikhtisar"
         android:fontFamily="@font/poppinsregular"

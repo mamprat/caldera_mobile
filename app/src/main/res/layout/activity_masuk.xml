@@ -26,9 +26,9 @@
         android:id="@+id/m_ic_back_1"
         />
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="80dp"
         android:layout_below="@id/m_img_1"
@@ -42,7 +42,7 @@
         android:layout_toRightOf="@id/m_img_2"
         android:layout_below="@id/m_img_1"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="20dp"
         android:text="Caldera mobile"
         android:textSize="32dp"
         android:fontFamily="@font/poppinssemibold"

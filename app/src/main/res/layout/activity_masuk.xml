@@ -14,108 +14,113 @@
         android:src="@drawable/gambar1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:id="@+id/m_img_1"
+        android:id="@+id/masuk_round"
         />
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/ic_back"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:id="@+id/m_ic_back_1"
-        />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="80dp"
-        android:layout_below="@id/m_img_1"
-        android:src="@drawable/gambar2"
-        android:id="@+id/m_img_2"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/m_img_2"
-        android:layout_below="@id/m_img_1"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:text="Caldera mobile"
-        android:textSize="32dp"
-        android:fontFamily="@font/poppinssemibold"
-        android:textColor="@color/black"
-        android:id="@+id/m_txt_1"
+        android:id="@+id/masuk_button_kembali"
         />
 
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/m_txt_1"
-        android:padding="30dp"
-        android:id="@+id/m_ly_1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/masuk_round"
+        android:id="@+id/masuk_ly_logo"
         >
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_height="55dp"
-            android:hint="Masukan Nomor Karyawan"
-            android:background="@drawable/background_outline"
-            android:paddingLeft="15dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16sp"
-            android:id="@+id/m_txt_nomor"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="20dp"
-            android:hint="Masukan Kata Sandi"
-            android:background="@drawable/background_outline"
-            android:paddingLeft="15dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="16sp"
-            android:id="@+id/m_txt_sandi"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Belum punya akun ?"
-            android:fontFamily="@font/poppinsregular"
-            android:id="@+id/m_txt_sudah"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/gambar2"
+            android:id="@+id/masuk_logo"
             />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:text="Daftar"
+            android:layout_marginLeft="20dp"
+            android:text="Caldera mobile"
             android:fontFamily="@font/poppinssemibold"
-            android:textColor="@color/purplePrimary"
-            android:id="@+id/m_txt_akun"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:id="@+id/masuk_text_title"
             />
-
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_below="@+id/m_ly_1"
-        android:width="250dp"
-        android:text="Masuk"
-        android:fontFamily="@font/poppinssemibold"
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_shape"
-        android:id="@+id/m_btn_1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/masuk_ly_logo"
+        android:id="@+id/masuk_ly_inputmasuk"
+        >
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:paddingLeft="15dp"
+            android:hint="Masukan Nomor Karyawan"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/graySecondary"
+            android:textSize="16sp"
+            android:background="@drawable/background_outline"
+            android:id="@+id/masuk_nik"
+            >
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:hint="Masukan Kata Sandi"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/graySecondary"
+            android:textSize="16sp"
+            android:background="@drawable/background_outline"
+            android:id="@+id/masuk_sandi"
+            >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:text="Belum punya akun ?"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_below="@+id/masuk_ly_inputmasuk"
+        android:id="@+id/masuk_text_belum"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:text="Daftar"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/purplePrimary"
+        android:textSize="16sp"
+        android:layout_below="@+id/masuk_text_belum"
+        android:id="@+id/masuk_daftarakun"
         />
 
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Masuk"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"
+        android:layout_below="@id/masuk_daftarakun"
+        android:id="@+id/masuk_button_masuk"
 </RelativeLayout>

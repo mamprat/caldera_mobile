@@ -14,135 +14,131 @@
         android:src="@drawable/gambar1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:id="@+id/d_img_1"
+        android:id="@+id/daftar_round"
         />
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/ic_back"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:id="@+id/d_ic_back_1"
+        android:id="@+id/daftar_button_kembali"
         />
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/d_ic_back_1"
-        android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
-        android:padding="10dp"
+        android:layout_marginTop="70dp"
         android:text="Daftar Akun"
-        android:textSize="32dp"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black"
-        android:id="@+id/d_text_1"
+        android:textSize="32dp"
+        android:layout_below="@+id/daftar_button_kembali"
+        android:id="@+id/daftar_title_daftar"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/d_text_1"
         android:text="Lakukan daftar akun untuk dapat hak akses"
         android:layout_centerHorizontal="true"
-        android:id="@+id/d_text_2"
-        />
-
+        android:layout_below="@id/daftar_title_daftar"
+        android:id="@+id/daftar_txt_deskripsi"
+    />
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/d_text_2"
-        android:padding="20dp"
-        android:id="@+id/ly_1"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/daftar_txt_deskripsi"
+        android:id="@+id/daftar_ly_input"
         >
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="55dp"
+            android:paddingLeft="15dp"
             android:hint="Nama Karyawan"
-            android:background="@drawable/background_outline"
-            android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
-            android:textSize="14sp"
-            android:id="@+id/d_txt_nama"
-            />
+            android:textColor="@color/graySecondary"
+            android:textSize="16sp"
+            android:background="@drawable/background_outline"
+            android:id="@+id/daftar_nama"
+            >
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
             android:hint="NIK Karyawan"
-            android:background="@drawable/background_outline"
-            android:layout_marginTop="15dp"
-            android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
-            android:textSize="14sp"
-            android:id="@+id/d_txt_nik"
-            />
-
+            android:textColor="@color/graySecondary"
+            android:textSize="16sp"
+            android:background="@drawable/background_outline"
+            android:id="@+id/daftar_nik"
+            >
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
             android:hint="Area Karyawan"
-            android:background="@drawable/background_outline"
-            android:layout_marginTop="15dp"
-            android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
-            android:textSize="14sp"
-            android:id="@+id/d_txt_area"
-            />
-
+            android:textColor="@color/graySecondary"
+            android:textSize="16sp"
+            android:background="@drawable/background_outline"
+            android:id="@+id/daftar_area"
+            >
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
             android:hint="Kata Sandi"
-            android:background="@drawable/background_outline"
-            android:layout_marginTop="15dp"
-            android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
-            android:textSize="14sp"
-            android:id="@+id/d_txt_sandi"
-            />
-
+            android:textColor="@color/graySecondary"
+            android:textSize="16sp"
+            android:background="@drawable/background_outline"
+            android:id="@+id/daftar_sandi"
+            >
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="55dp"
-            android:hint="Ulangi Kata Sandi"
-            android:background="@drawable/background_outline"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:paddingLeft="15dp"
+            android:hint="Ulangi Kata Sandi"
             android:fontFamily="@font/poppinsregular"
-            android:textSize="14sp"
-            android:id="@+id/d_txt_ulang"
-            />
-
+            android:textColor="@color/graySecondary"
+            android:textSize="16sp"
+            android:background="@drawable/background_outline"
+            android:id="@+id/daftar_ulangsandi"
+            >
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ly_1"
-        android:layout_marginTop="20dp"
-        android:width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:text="Daftar"
         android:fontFamily="@font/poppinssemibold"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/button_shape"
-        android:id="@+id/d_btn_1"
+        android:layout_below="@id/daftar_ly_input"
+        android:id="@+id/masuk_button_masuk"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
-        android:layout_below="@id/d_btn_1"
         android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:id="@+id/ly_2"
+        android:layout_below="@id/masuk_button_masuk"
+        android:id="@+id/daftar_ly_punyaakun"
         >
 
         <TextView
@@ -150,17 +146,17 @@
             android:layout_height="wrap_content"
             android:text="Sudah punya akun ?"
             android:fontFamily="@font/poppinsregular"
-            android:id="@+id/d_txt_sudah"
+            android:id="@+id/daftar_sudah"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Masuk"
             android:fontFamily="@font/poppinssemibold"
             android:textColor="@color/purplePrimary"
-            android:id="@+id/d_txt_akun"
+            android:id="@+id/daftar_akun"
             />
-
     </LinearLayout>
 </RelativeLayout>
 

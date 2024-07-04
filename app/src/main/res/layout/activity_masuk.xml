@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -12,8 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/gambar1"
+        android:contentDescription="@string/caldera_mobile"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:id="@+id/masuk_round"
         />
 
@@ -21,7 +22,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/ic_back"
-        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/kembali"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:id="@+id/masuk_button_kembali"
         />
@@ -41,14 +43,19 @@
             android:id="@+id/masuk_logo"
             />
         <TextView
-            android:layout_width="140dp"
+            android:id="@+id/main_text_title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Caldera mobile"
+            android:layout_marginStart="20dp"
+            android:text="@string/caldera_mobile"
             android:fontFamily="@font/poppinssemibold"
             android:textColor="@color/black"
-            android:textSize="32dp"
-            android:id="@+id/masuk_text_title"
+            android:textSize="32sp"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:contentDescription="@string/caldera_mobile"
+            android:importantForAccessibility="yes"
+            tools:text="Caldera\nMobile"
             />
     </LinearLayout>
 
@@ -64,35 +71,42 @@
         <EditText
             android:layout_width="350dp"
             android:layout_height="55dp"
-            android:paddingLeft="15dp"
-            android:hint="Masukan Nomor Karyawan"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:hint="@string/nomor"
             android:fontFamily="@font/poppinsregular"
             android:textColor="@color/graySecondary"
             android:textSize="16sp"
             android:background="@drawable/background_outline"
+            android:autofillHints="nik"
+            android:inputType="text"
             android:id="@+id/masuk_nik"
-            >
+            />
 
         <EditText
             android:layout_width="350dp"
             android:layout_height="55dp"
             android:layout_marginTop="20dp"
-            android:paddingLeft="15dp"
-            android:hint="Masukan Kata Sandi"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:hint="@string/sandi"
             android:fontFamily="@font/poppinsregular"
             android:textColor="@color/graySecondary"
             android:textSize="16sp"
             android:background="@drawable/background_outline"
+            android:autofillHints="sandi"
+            android:inputType="text"
             android:id="@+id/masuk_sandi"
-            >
+            />
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:paddingLeft="30dp"
-        android:text="Belum punya akun ?"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/belum"
         android:fontFamily="@font/poppinsregular"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -102,8 +116,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="30dp"
-        android:text="Daftar"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/daftar"
         android:fontFamily="@font/poppinsregular"
         android:textColor="@color/purplePrimary"
         android:textSize="16sp"
@@ -116,11 +131,12 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="Masuk"
+        android:text="@string/masuk"
         android:fontFamily="@font/poppinssemibold"
         android:textSize="24sp"
         android:textColor="@color/white"
         android:background="@drawable/button_shape"
         android:layout_below="@id/masuk_daftarakun"
         android:id="@+id/masuk_button_masuk"
+        />
 </RelativeLayout>

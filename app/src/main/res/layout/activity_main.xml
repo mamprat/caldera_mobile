@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/gambar1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/caldera_mobile"
+        android:layout_alignParentStart="true"
         android:id="@+id/main_round"
         />
 
@@ -31,16 +31,21 @@
                 android:src="@drawable/gambar2"
                 android:id="@+id/main_logo"
                 />
-            <TextView
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="Caldera mobile"
-                android:fontFamily="@font/poppinssemibold"
-                android:textColor="@color/black"
-                android:textSize="32dp"
-                android:id="@+id/main_text_title"
-                />
+        <TextView
+            android:id="@+id/main_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/caldera_mobile"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:lineSpacingMultiplier="0.9"
+            android:maxLines="2"
+            android:contentDescription="@string/caldera_mobile"
+            android:importantForAccessibility="yes"
+            tools:text="Caldera\nMobile"
+            />
     </LinearLayout>
 
     <TextView
@@ -49,7 +54,7 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="Manfaatkan kekuatan data real-time untuk membantu menyelesaikan tugasmu atau membuat keputusan dari ikhtisar"
+        android:hint="@string/manfaatkan_kekuatan"
         android:fontFamily="@font/poppinsregular"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -69,9 +74,9 @@
             <Button
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="Masuk"
+                android:text="@string/masuk"
                 android:fontFamily="@font/poppinssemibold"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:textColor="@color/white"
                 android:background="@drawable/button_shape"
                 android:id="@+id/main_button_masuk"
@@ -80,12 +85,12 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Daftar"
+                android:text="@string/daftar"
                 android:fontFamily="@font/poppinssemibold"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:textColor="@color/white"
                 android:background="@drawable/button_shape"
                 android:id="@+id/main_button_daftar"
-
+                />
     </LinearLayout>
 </RelativeLayout>

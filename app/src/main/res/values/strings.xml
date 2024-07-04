@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">ph_datalogger</string>
+    <string name="caldera_mobile"><![CDATA[Caldera<br>Mobile]]></string>
+    <string name="manfaatkan_kekuatan">Manfaatkan kekuatan data real-time untuk membantu menyelesaikan tugasmu atau membuat keputusan dari ikhtisar</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="kembali">Kembali</string>
+    <string name="belum">Belum punya akun ?</string>
+    <string name="sudah">Sudah punya akun ?</string>
+    <string name="sandi">Masukan Kata Sandi</string>
+    <string name="nomor">Masukan Nomor Karyawan</string>
+    <string name="ulang">Ulangi Kata Sandi</string>
+    <string name="area">Masukan Area Karyawan</string>
+    <string name="nama">Masukan Nama Karyawan</string>
+    <string name="hak">Lakukan daftar akun untuk dapat hak akses</string>
+    <string name="simpan">Simpan</string>
+    <string name="masukan">Masukan</string>
+    <string name="nilaiph">Nilai pH</string>
+    <string name="nilaitemp">Nilai Suhu</string>
+
+
 </resources>

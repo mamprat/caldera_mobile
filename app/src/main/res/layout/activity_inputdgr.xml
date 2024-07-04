@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -11,9 +11,10 @@
     <ImageView
         android:layout_width="90dp"
         android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:src="@drawable/gambar1"
+        android:contentDescription="@string/caldera_mobile"
         android:id="@+id/inputdgr_round"
         />
 
@@ -21,9 +22,10 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/ic_logout"
-        android:layout_marginLeft="230dp"
+        android:contentDescription="@string/keluar"
+        android:layout_marginStart="230dp"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/inputdgr_round"
+        android:layout_toEndOf="@+id/inputdgr_round"
         android:id="@+id/input_button_logout"
         />
 
@@ -32,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
-        android:text="DGR Data Logger"
+        android:text="@string/dgr"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:layout_below="@+id/inputdgr_round"
@@ -44,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginTop="5dp"
-        android:text="Waktu Pengecekan"
+        android:text="@string/pengecekan"
         android:fontFamily="@font/poppinsregular"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -65,10 +67,13 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:paddingLeft="15dp"
-            android:hint="Masukan waktu"
+            android:paddingRight="15dp"
+            android:hint="@string/waktu"
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="waktu"
+            android:inputType="text"
             android:id="@+id/inputdgr_waktu"
             />
 
@@ -78,10 +83,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="BIO"
+        android:text="@string/bio"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:layout_below="@id/inputdgr_ly_waktu"
         android:id="@+id/inputdgr_txt_bio"
         />
@@ -98,10 +103,12 @@
             android:layout_width="100dp"
             android:layout_height="55dp"
             android:textAlignment="center"
-            android:hint="Nilai pH"
+            android:hint="@string/nilaiph"
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="nilaiph"
+            android:inputType="number"
             android:id="@+id/inputdgr_bioph"
             />
 
@@ -115,6 +122,8 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="nilaitemp"
+            android:inputType="number"
             android:id="@+id/inputdgr_biosuhu"
             />
 
@@ -126,6 +135,8 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="masukan"
+            android:inputType="number"
             android:id="@+id/inputdgr_biomasukan"
             />
     </LinearLayout>
@@ -135,10 +146,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="Water"
+        android:text="@string/water"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:layout_below="@id/inputdgr_ly_bio"
         android:id="@+id/inputdgr_txt_water"
         />
@@ -155,10 +166,12 @@
             android:layout_width="100dp"
             android:layout_height="55dp"
             android:textAlignment="center"
-            android:hint="Nilai pH"
+            android:hint="@string/nilaiph"
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="nilaiph"
+            android:inputType="number"
             android:id="@+id/inputdgr_waterph"
             />
 
@@ -172,6 +185,8 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="nilaitemp"
+            android:inputType="number"
             android:id="@+id/inputdgr_watersuhu"
             />
 
@@ -183,6 +198,8 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="masukan"
+            android:inputType="number"
             android:id="@+id/inputdgr_watermasukan"
             />
     </LinearLayout>
@@ -192,10 +209,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="Acid"
+        android:text="@string/acid"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:layout_below="@id/inputdgr_ly_water"
         android:id="@+id/inputdgr_txt_acid"
         />
@@ -212,10 +229,12 @@
             android:layout_width="100dp"
             android:layout_height="55dp"
             android:textAlignment="center"
-            android:hint="Nilai pH"
+            android:hint="@string/nilaiph"
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="nilaiph"
+            android:inputType="number"
             android:id="@+id/inputdgr_acidph"
             />
 
@@ -229,6 +248,8 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="nilaitemp"
+            android:inputType="number"
             android:id="@+id/inputdgr_acidsuhu"
             />
 
@@ -240,6 +261,8 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
+            android:autofillHints="masukan"
+            android:inputType="number"
             android:id="@+id/inputdgr_acidmasukan"
             />
     </LinearLayout>

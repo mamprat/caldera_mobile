@@ -17,6 +17,13 @@
     <string name="masukan">Masukan</string>
     <string name="nilaiph">Nilai pH</string>
     <string name="nilaitemp">Nilai Suhu</string>
+    <string name="bio">BIO</string>
+    <string name="water">Water</string>
+    <string name="acid">Acid</string>
+    <string name="waktu">Masukan waktu</string>
+    <string name="pengecekan">Waktu Pengecekan</string>
+    <string name="dgr">DGR Data Logger</string>
+    <string name="keluar">Keluar</string>
 
 
 </resources>

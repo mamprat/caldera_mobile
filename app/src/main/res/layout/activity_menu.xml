@@ -12,8 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/gambar1"
+        android:contentDescription="@string/caldera_mobile"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:id="@+id/menu_round"
         />
 
@@ -21,9 +22,10 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/ic_logout"
-        android:layout_marginLeft="180dp"
+        android:contentDescription="@string/keluar"
+        android:layout_marginStart="180dp"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/menu_round"
+        android:layout_toEndOf="@+id/menu_round"
         android:id="@+id/menu_button_logout"
         />
 
@@ -31,8 +33,8 @@
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
-        android:layout_marginLeft="40dp"
-        android:text="Selamat Datang"
+        android:layout_marginStart="40dp"
+        android:text="@string/selamat"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black"
         android:textSize="32sp"
@@ -75,14 +77,18 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_list"
+                    android:contentDescription="@string/ic_list"
+
                     />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Input DGR"
+                    android:text="@string/input_dgr"
                     android:fontFamily="@font/poppinsregular"
                     android:textColor="@color/black"
+                    android:contentDescription="@string/input_dgr"
+
                     />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -112,13 +118,15 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_history"
+                    android:contentDescription="@string/history"
+
                     />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/poppinsregular"
-                    android:text="History DGR"
+                    android:text="@string/history"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="12sp"

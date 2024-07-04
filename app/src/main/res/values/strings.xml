@@ -24,6 +24,34 @@
     <string name="pengecekan">Waktu Pengecekan</string>
     <string name="dgr">DGR Data Logger</string>
     <string name="keluar">Keluar</string>
+    <string name="selamat">Selamat Datang</string>
+    <string name="history">History DGR</string>
+    <string name="input_dgr">Input DGR</string>
+    <string name="ic_list">List DGR</string>
+    <string name="ic_history">Tabel DGR</string>
+    <string name="riwayat_bio">Riwayat BIO</string>
+    <string name="riwayat_water">Riwayat Water</string>
+    <string name="riwayat_acid">Riwayat Acid</string>
+    <string name="tanggal_awal">Tanggal Awal</string>
+    <string name="tanggal_akhir">Tanggal Akhir</string>
+    <string name="awal">Awal</string>
+    <string name="akhir">Akhir</string>
+    <string name="cari">Cari</string>
+    <string name="date">Date</string>
+    <string name="before_bio">Before BIO</string>
+    <string name="after_bio">After BIO</string>
+    <string name="before_water">Before Water</string>
+    <string name="after_water">After Water</string>
+    <string name="before_acid">Before Acid</string>
+    <string name="after_acid">After Acid</string>
+    <string name="before_temp">Before Temp</string>
+    <string name="after_temp">After Temp</string>
+    <string name="add">ADD</string>
+    <string name="lanjut">lanjut</string>
+    <string name="menu">menu</string>
+    <string name="strip">-</string>
+
+
 
 
 </resources>

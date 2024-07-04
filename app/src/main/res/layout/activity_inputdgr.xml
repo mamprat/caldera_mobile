@@ -102,7 +102,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_bioph"
+            android:id="@+id/inputdgr_bioph"
             />
 
         <EditText
@@ -115,7 +115,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_biosuhu"
+            android:id="@+id/inputdgr_biosuhu"
             />
 
         <EditText
@@ -126,7 +126,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_biomasukan"
+            android:id="@+id/inputdgr_biomasukan"
             />
     </LinearLayout>
 
@@ -159,7 +159,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_waterph"
+            android:id="@+id/inputdgr_waterph"
             />
 
         <EditText
@@ -172,7 +172,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_watersuhu"
+            android:id="@+id/inputdgr_watersuhu"
             />
 
         <EditText
@@ -183,7 +183,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_watermasukan"
+            android:id="@+id/inputdgr_watermasukan"
             />
     </LinearLayout>
 
@@ -216,7 +216,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_acidph"
+            android:id="@+id/inputdgr_acidph"
             />
 
         <EditText
@@ -229,7 +229,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_acidsuhu"
+            android:id="@+id/inputdgr_acidsuhu"
             />
 
         <EditText
@@ -240,7 +240,7 @@
             android:background="@drawable/background_outline"
             android:fontFamily="@font/poppinsregular"
             android:textSize="14sp"
-            android:id="@+id/inputdgr_txt_acidmasukan"
+            android:id="@+id/inputdgr_acidmasukan"
             />
     </LinearLayout>
 
